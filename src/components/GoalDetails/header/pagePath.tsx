@@ -26,9 +26,11 @@ const PagePath = () => {
   return (
     <Breadcrumb className="text-sm">
       <BreadcrumbList className="!gap-x-1 gap-y-0">
-        <BreadcrumbPage className="text-text-gray-3 font-medium">
-          {paths[0].name}
-        </BreadcrumbPage>
+        <BreadcrumbItem>
+          <BreadcrumbPage className="text-text-gray-3 font-medium">
+            {paths[0].name}
+          </BreadcrumbPage>
+        </BreadcrumbItem>
         <BreadcrumbSeparator className="rtl:rotate-180" />
         {paths.length > 3 && (
           <>
