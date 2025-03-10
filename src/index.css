@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "./fonts/graphik-arabic/stylesheet.css";
+@import "./fonts.css";
 
 @plugin "tailwindcss-animate";
 
@@ -113,8 +113,18 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --color-text-gray-2: ##3f3f46;
-  --color-text-gray-3: #71717a;
+  --color-Gray-50: #fafafa;
+  --color-Gray-200: #e4e4e7;
+  --color-Gray-400: #a1a1aa;
+  --color-Gray-500: #71717a;
+  --color-Gray-600: #52525b;
+  --color-Gray-700: #3f3f46;
+  --color-Blue-300: ##6687ff;
+  --color-Blue-400: #335fff;
+  --color-Blue-500: #0037ff;
+  --color-Red-500: #db4f00;
+  --color-Line-Container-Line: #f4f4f5;
+  --color-Line-Dotted-Line: #d4d4d8;
 }
 
 @layer base {
@@ -136,5 +146,23 @@
   }
   .avatar {
     @apply size-8 rounded-full;
+  }
+}
+
+@layer components {
+  .widget {
+    @apply border-Line-Container-Line rounded-[0.75rem] border-[0.0625rem] border-solid;
+  }
+  .uaggregator {
+    @apply h-36 w-full flex-col gap-y-1.5 p-2;
+  }
+  .curve-line {
+    top: 0;
+    left: 0;
+    border-bottom: 2.5px solid var(--color-Line-Dotted-Line);
+    border-right: 2.5px solid var(--color-Line-Dotted-Line);
+    border-radius: 0 0 100% 0;
+    width: 13px;
+    height: 13px;
   }
 }
