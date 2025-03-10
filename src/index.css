@@ -165,4 +165,7 @@
     width: 13px;
     height: 13px;
   }
+  .custom-h1 {
+    @apply text-lg font-semibold;
+  }
 }

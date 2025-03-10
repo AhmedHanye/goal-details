@@ -1,16 +1,13 @@
-import {
-  Menubar,
-  MenubarMenu,
-  MenubarTrigger,
-  MenubarContent,
-  MenubarItem,
-} from "@/components/ui/menubar";
 import { Progress } from "@/components/ui/progress";
-import { Circle, CircleUserRound, Ellipsis, GripVertical } from "lucide-react";
+import { Circle, CircleUserRound } from "lucide-react";
+import DragSign from "./dragSign";
+import DotMenu from "./dotMenu";
+import { MenubarItem } from "@/components/ui/menubar";
+
 const Goal = () => {
   return (
-    <div className="border-t-Line-Container-Line hover:bg-Gray-50 group relative flex h-[4.25rem] cursor-grab justify-between border-t-1 px-8 py-2">
-      <div className="flex h-full flex-col justify-between">
+    <div className="border-t-Line-Container-Line hover:bg-Gray-50 group relative flex h-[4.25rem] cursor-grab justify-between border-t-1 px-8">
+      <div className="flex h-full flex-col justify-center gap-y-4">
         <h1 className="text-Gray-600 text-sm font-medium">
           تعيين مدير مبيعات جديد
         </h1>
@@ -25,22 +22,13 @@ const Goal = () => {
           <span className="text-Gray-500 text-xs">المالية</span>
         </div>
       </div>
-      <div className="h-full flex-col justify-between">
-        <Menubar className="flex justify-end border-none bg-transparent p-0 shadow-none">
-          <MenubarMenu>
-            <MenubarTrigger className="p-0 opacity-0 transition-opacity duration-150 group-hover:opacity-100">
-              <div className="size-5 cursor-pointer rounded-sm hover:shadow-md">
-                <Ellipsis size={20} />
-              </div>
-            </MenubarTrigger>
-            <MenubarContent>
-              <MenubarItem>إزالة من التحديث التلقائي للتقدم</MenubarItem>
-              <MenubarItem className="text-Red-500 hover:!text-Red-500">
-                فصل العمل عن الهدف
-              </MenubarItem>
-            </MenubarContent>
-          </MenubarMenu>
-        </Menubar>
+      <div className="h-full flex-col justify-center gap-y-4">
+        <DotMenu>
+          <MenubarItem>إزالة من التحديث التلقائي للتقدم</MenubarItem>
+          <MenubarItem className="text-Red-500 hover:!text-Red-500">
+            فصل العمل عن الهدف
+          </MenubarItem>
+        </DotMenu>
         <div className="vertical-center gap-x-4">
           <div className="vertical-center gap-x-[0.4375rem]">
             <Progress
@@ -57,9 +45,7 @@ const Goal = () => {
           />
         </div>
       </div>
-      <div className="absolute top-1/2 right-0.5 -translate-y-1/2 transform opacity-0 transition-opacity duration-150 group-hover:opacity-100">
-        <GripVertical size={14} className="fill-Gray-700 stroke-Gray-700" />
-      </div>
+      <DragSign />
       <div className="bg-Line-Dotted-Line absolute -top-[3.8rem] right-4 z-30 h-full w-0.5"></div>
       <div className="curve-line absolute top-1.5 right-4"></div>
     </div>

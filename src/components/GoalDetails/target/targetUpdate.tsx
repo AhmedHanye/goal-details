@@ -12,7 +12,7 @@ const TargetUpdate = () => {
         <Button
           variant="state"
           className="cursor-pointer text-sm font-medium"
-          size="state"
+          size={"custom1"}
         >
           تحديث الحالة
         </Button>

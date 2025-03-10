@@ -1,7 +1,9 @@
+import Discussion from "./target/discussion";
 import TargetDescription from "./target/targetDescription";
 import TargetProgress from "./target/targetProgress";
 import TargetUpdate from "./target/targetUpdate";
 import Uaggregators from "./target/uaggregators";
+import Work from "./target/work";
 
 const Target = () => {
   return (
@@ -10,6 +12,8 @@ const Target = () => {
       <Uaggregators />
       <TargetProgress />
       <TargetDescription />
+      <Work />
+      <Discussion />
     </div>
   );
 };
