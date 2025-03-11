@@ -2,6 +2,8 @@ import { CircleCheck } from "lucide-react";
 import DragSign from "./dragSign";
 import DotMenu from "./dotMenu";
 import { MenubarItem } from "@/components/ui/menubar";
+import CustomCalender from "./customCalender";
+import CustomUser from "./customUser";
 
 const Project = () => {
   return (
@@ -10,14 +12,15 @@ const Project = () => {
         <CircleCheck size={16} className="stroke-Gray-700" strokeWidth={0.8} />
         <p className="text-Gray-600 text-sm">تعيين مدير مبيعات جديد</p>
       </div>
-      <div className="vertical-center">
+      <div className="vertical-center gap-x-3">
+        <CustomUser/>
+        <CustomCalender />
         <DotMenu>
           <MenubarItem className="text-Red-500 hover:!text-Red-500">
             فصل العمل عن الهدف
           </MenubarItem>
         </DotMenu>
       </div>
-
       <DragSign />
     </div>
   );

@@ -28,7 +28,7 @@ const Discussion = () => {
           <div className="relative w-full">
             <Textarea
               placeholder="اسأل سؤالًا أو أضف تعليقك"
-              className="h-[6.5rem] p-3.5 text-xs"
+              className="h-[6.5rem] p-3.5  text-xs"
             />
             <Button className="text-xs font-medium absolute left-3.5 bottom-3.5 cursor-pointer" size={'custom1'}>
             أضف تعليق

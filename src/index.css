@@ -171,4 +171,7 @@
   .custom-h1 {
     @apply text-lg font-semibold;
   }
+  .custom-icon1{
+    @apply cursor-pointer rounded-full border border-dashed border-gray-300 p-[0.3125rem] opacity-0 group-hover:opacity-100;
+  }
 }
