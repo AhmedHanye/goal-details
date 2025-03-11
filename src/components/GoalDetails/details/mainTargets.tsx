@@ -35,7 +35,7 @@ const MainTargets = () => {
             اطلاق مدير في نهاية شهر يناير
           </h2>
           <DotMenu>
-            <MenubarItem className="text-Red-500 hover:!text-Red-500">
+            <MenubarItem className="text-Red-500 hover:!text-Red-500 text-sm">
               إلغاء الارتباط بهذا الهدف الرئيسي
             </MenubarItem>
           </DotMenu>

@@ -18,7 +18,7 @@ const SubGoals = () => {
   }, []);
 
   return (
-    <div>
+    <div className="pt-2">
       <div className="vertical-center justify-between">
         <div className="vertical-center gap-x-2 px-3">
           <div
@@ -35,7 +35,7 @@ const SubGoals = () => {
         </div>
         <div className="vertical-center gap-x-2 px-2.5 py-1">
           <Weight size={18} className="stroke-Gray-500 stroke-[0.9px]" />
-          <p className="text-Gray-500 text-sm">:الاوزان</p>
+          <p className="text-Gray-500 text-sm">الأوزان:</p>
           <p className="text-sm font-medium">متساوية</p>
         </div>
       </div>

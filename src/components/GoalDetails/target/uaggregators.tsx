@@ -20,7 +20,7 @@ const Uaggregators = () => {
       </div>
       <div className="uaggregator widget center">
         <p className="text-xs font-medium">وقت الهدف المتبقي</p>
-        <p className="text-[2rem] font-medium">23 يوم</p>
+        <p className=" font-medium">23 يوم</p>
         <p className="text-Gray-500 text-sm">1 يناير 2025 — 31 ديسمبر 2025</p>
       </div>
     </div>

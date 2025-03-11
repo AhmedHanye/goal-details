@@ -121,7 +121,8 @@
   --color-Gray-700: #3f3f46;
   --color-Gray-900: #09090B;
   --color-Green-900: #002410;
-  --color-Blue-300: ##6687ff;
+  --color-Blue-50: #E5EBFF;
+  --color-Blue-300: #6687ff;
   --color-Blue-400: #335fff;
   --color-Blue-500: #0037ff;
   --color-Red-500: #db4f00;
@@ -134,7 +135,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-right;
     font-family: "Graphik Arabic", sans-serif;
   }
 }

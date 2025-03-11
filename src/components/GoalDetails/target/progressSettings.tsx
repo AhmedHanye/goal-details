@@ -9,8 +9,11 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import ProgressOption from "./progressOption";
+import { useState } from "react";
+import { DialogClose } from "@radix-ui/react-dialog";
 
 const ProgressSettings = () => {
+  const [option, setOption] = useState<number | null>(null);
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -21,27 +24,33 @@ const ProgressSettings = () => {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[38.25rem]">
         <DialogHeader>
-          <DialogTitle className="border-b-1 pb-4 text-right">
+          <DialogTitle className="border-b-1 pb-4">
             إعدادات تقدم الهدف
           </DialogTitle>
         </DialogHeader>
-        <div className="flex flex-col gap-y-3.5 text-right">
+        <div className="flex flex-col gap-y-3.5">
           <p>مصدر تقدم الهدف</p>
           <ProgressOption
-            title="المشاريع"
-            description="سيتم احتساب تقدم الهدف تلقائيًا بناءً على تقدم المشاريع المتصلة."
+            title="الأهداف الفرعية"
+            description=".سيتم حساب تقدم الهدف تلقائيًا بناءً على تقدم الأهداف الفرعية"
+            selected={option === 1}
+            selectFunc={() => setOption(1)}
           >
             <img src="/Graphics-symbol.svg" alt="logo" width={16} height={16} />
           </ProgressOption>
           <ProgressOption
-            title="الأهداف الفرعية"
-            description="سيتم حساب تقدم الهدف تلقائيًا بناءً على تقدم الأهداف الفرعية."
+            title="المشاريع"
+            description=".سيتم احتساب تقدم الهدف تلقائيًا بناءً على تقدم المشاريع المتصلة"
+            selected={option === 2}
+            selectFunc={() => setOption(2)}
           >
             <ClipboardList size={16} />
           </ProgressOption>
           <ProgressOption
             title="يدوي"
-            description="يتم تحديث تقدم هذا الهدف يدويًا."
+            description=".يتم تحديث تقدم هذا الهدف يدويًا"
+            selected={option === 3}
+            selectFunc={() => setOption(3)}
           >
             <User size={16} />
           </ProgressOption>
@@ -51,9 +60,11 @@ const ProgressSettings = () => {
           <Button type="submit" className="cursor-pointer">
             حفظ
           </Button>
+          <DialogClose asChild>
           <Button variant="ghost" className="cursor-pointer">
             إلغاء
           </Button>
+        </DialogClose>
         </DialogFooter>
       </DialogContent>
     </Dialog>

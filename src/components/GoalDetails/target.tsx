@@ -7,7 +7,7 @@ import Work from "./target/work";
 
 const Target = () => {
   return (
-    <div className="mx-auto flex lg:w-[42.5rem] max-lg:w-full flex-col gap-y-8 px-4 py-16">
+    <div className="mx-auto flex lg:w-[42.5rem] max-lg:w-full flex-col gap-y-8 px-4 max-md:px-2 py-16 max-md:py-8">
       <TargetUpdate />
       <Uaggregators />
       <TargetProgress />
