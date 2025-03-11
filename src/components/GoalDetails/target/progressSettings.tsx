@@ -14,7 +14,7 @@ const ProgressSettings = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="vertical-center text-Gray-500 bg-Gray-50 hover:bg-Gray-50/90 h-8 cursor-pointer gap-x-2 rounded-sm p-1.5">
+        <div className="vertical-center text-Gray-500 hover:bg-Gray-50 h-8 cursor-pointer gap-x-2 rounded-sm p-1.5">
           <Settings2 size={18} />
           <p className="text-sm font-medium">إعدادات تقدم الهدف</p>
         </div>

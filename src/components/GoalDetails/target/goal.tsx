@@ -8,7 +8,7 @@ const Goal = () => {
   return (
     <div className="border-t-Line-Container-Line hover:bg-Gray-50 group relative flex h-[4.25rem] cursor-grab justify-between border-t-1 px-8">
       <div className="flex h-full flex-col justify-center gap-y-4">
-        <h1 className="text-Gray-600 text-sm font-medium">
+        <h1 className="text-Gray-600 text-sm font-medium ">
           تعيين مدير مبيعات جديد
         </h1>
         <div className="vertical-center gap-x-2">
