@@ -36,7 +36,7 @@ const ProgressSettings = () => {
             selected={option === 1}
             selectFunc={() => setOption(1)}
           >
-            <img src="/Graphics-symbol.svg" alt="logo" width={16} height={16} />
+            <img src="/icon1.svg" alt="logo" width={16} height={16} />
           </ProgressOption>
           <ProgressOption
             title="المشاريع"

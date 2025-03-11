@@ -14,12 +14,11 @@ const CustomCalender = () => {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <div className="custom-icon1">
+        <div className="custom-icon1" onClick={(e) => e.stopPropagation()}>
           <CalendarIcon
             size={10}
             className="stroke-gray-300"
             strokeWidth={1.8}
-            onClick={(e) => e.stopPropagation()}
           />
         </div>
       </PopoverTrigger>

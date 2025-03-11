@@ -19,8 +19,8 @@ const SubGoals = () => {
 
   return (
     <div className="pt-2">
-      <div className="vertical-center justify-between">
-        <div className="vertical-center gap-x-2 px-3">
+      <div className="vertical-center justify-between px-3.5">
+        <div className="vertical-center gap-x-2 ">
           <div
             className="vertical-center cursor-pointer gap-x-2"
             onClick={() => setOpen((pre: boolean) => !pre)}

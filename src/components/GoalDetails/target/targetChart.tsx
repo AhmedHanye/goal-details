@@ -14,15 +14,15 @@ const chartData = [
 // Todo: change the color of the chart
 
 const chartConfig = {
-  progress: {
-    label: "Progress",
+  desktop: {
+    label: "Desktop",
+    color: "hsl(var(--chart-1))",
   },
 } satisfies ChartConfig;
-
 const TargetChart = () => {
   return (
     <div id="target-chart" className="flex h-[15.0625rem]">
-      <ChartContainer config={chartConfig} className="w-full">
+      <ChartContainer config={chartConfig} className="w-full ps-4">
         <AreaChart accessibilityLayer data={chartData}>
           <CartesianGrid vertical={false} />
           <XAxis
@@ -46,7 +46,9 @@ const TargetChart = () => {
             dataKey="النسبة"
             type="linear"
             fillOpacity={0.4}
-            className="fill-Gray-200 stroke-Gray-200"
+            fill="var(--color-desktop)"
+            stroke="#335FFF"
+            strokeWidth={0}
           />
           <ChartTooltip
             cursor={false}

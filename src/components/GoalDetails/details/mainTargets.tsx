@@ -1,4 +1,4 @@
-import { MenubarItem } from "@radix-ui/react-menubar";
+import { MenubarItem } from "@/components/ui/menubar";
 import DotMenu from "../target/dotMenu";
 import PlusButton from "../target/plusButton";
 import { Circle } from "lucide-react";

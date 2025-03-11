@@ -15,7 +15,7 @@ const DotMenu = ({ children }: { children: React.ReactNode }) => {
             <Ellipsis size={20} className="stroke-[0.08rem]" />
           </div>
         </MenubarTrigger>
-        <MenubarContent>{children}</MenubarContent>
+        <MenubarContent >{children}</MenubarContent>
       </MenubarMenu>
     </Menubar>
   );
