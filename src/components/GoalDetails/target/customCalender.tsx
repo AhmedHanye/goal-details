@@ -13,7 +13,7 @@ const CustomCalender = () => {
 
   return (
     <Popover>
-      <PopoverTrigger asChild>
+      <PopoverTrigger asChild aria-label="calendar">
         <div className="custom-icon1" onClick={(e) => e.stopPropagation()}>
           <CalendarIcon
             size={10}
